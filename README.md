@@ -4,3 +4,4 @@ Python CRUD Rest API in Python using Django, Django Rest Framework, Postgres, Do
 
 # Youtube
 https://www.youtube.com/watch?v=GaPAGkJDzGQ
+
