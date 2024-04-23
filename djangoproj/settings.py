@@ -78,7 +78,7 @@ WSGI_APPLICATION = 'djangoproj.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': os.environ.get('DB_DRIVER', 'django.db.backends.prostgresql'),
+        'ENGINE': os.environ.get('DB_DRIVER', 'django.db.backends.postgresql'),
         'NAME': os.environ.get('PG_DB', 'postgres'),
         'USER': os.environ.get('PG_USER', 'postgres'),
         'PASSWORD': os.environ.get('PG_PASSWORD', 'postgres'),
