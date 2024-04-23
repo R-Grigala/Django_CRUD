@@ -10,7 +10,6 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/5.0/ref/settings/
 """
 
-import os
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -21,7 +20,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/5.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-r(#^rguz#201h#_xyc+fqy*zf^h$=$x5!xffvj%!!&_4ia9y&k'
+SECRET_KEY = 'django-insecure-%mbxbpw#xy^jl8lglt0p9c917q9bv=z1igf$s4!)z+bno03umv'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -38,8 +37,6 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'djangoapp',
-    'rest_framework'
 ]
 
 MIDDLEWARE = [
@@ -78,12 +75,8 @@ WSGI_APPLICATION = 'djangoproj.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': os.environ.get('DB_DRIVER', 'django.db.backends.prostgresql'),
-        'NAME': os.environ.get('PG_DB', 'postgres'),
-        'USER': os.environ.get('PG_USER', 'postgres'),
-        'PASSWORD': os.environ.get('PG_PASSWORD', 'postgres'),
-        'HOST': os.environ.get('PG_HOST', 'localhost'),
-        'PORT': os.environ.get('PG_PORT', '5432')
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
 
