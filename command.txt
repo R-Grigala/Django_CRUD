@@ -1,4 +1,4 @@
-#1 Frist Start postgres db on the Docker
+#1 First Start postgres db on the Docker
 
 sudo docker-compose up -d db
 
