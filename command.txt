@@ -4,8 +4,8 @@ sudo docker-compose up -d db
 
 #2 Second Build djangoapp on the Docker
 
-sudo dicker-compose build djangoapp
+sudo docker-compose build djangoapp
 
 #2 Second Start djangoapp on the Docker
 
-sudo dicker-compose up -d djangoapp
+sudo docker-compose up -d djangoapp
